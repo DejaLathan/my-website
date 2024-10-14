@@ -1,27 +1,44 @@
 body { 
-  background: #FFF; 
-  text-align: center; 
-}
-p { 
-  font: normal 18px/1.6 "Helvetica", Arial, sans-serif; 
-  color: #464646; 
-}
-.id { 
-  margin-bottom: 15px; 
-}
-#class { 
-  line-height: 1.1; 
-  font-family: "Roboto Slab", serif; 
-  font-weight: 300; 
-}
-#img { 
-  border: none 
-}
-.org { 
-  color: #54ba6a; 
-  text-decoration: underline; 
+  color: #000000;
+  text-align: left; 
 }
 
-a { 
-  color: #68c6b8; 
+p { /*type selector */
+  font: normal 1.125em "Helvetica", Arial, sans-serif; 
+  line-height:  2em;
+  color: #000000; 
+  font-size: 100%;
 }
+h1{
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}/*id selector selects just this element */
+#bm_related { 
+  color:#ff0000
+}/*class selector */
+.first_text { /*can apply to multiple elements */
+  color: #2f4f4f;
+}/*relational selector*/
+section#char_pages>p{
+  color: #b8860b;
+
+}
+body em{
+  color: hsl(240, 100%, 50%);
+}
+
+section#char_links a:visited{
+  color:#006400;
+}
+section#char_links a:hover{
+  font-size:200%;
+  color: #ff0000;
+}
+
+
