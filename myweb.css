@@ -2,7 +2,6 @@ body {
   color: #000000;
   text-align: left; 
 }
-
 p { /*type selector */
   font: normal 1.125em "Helvetica", Arial, sans-serif; 
   line-height:  2em;
@@ -21,7 +20,8 @@ h2{
 }/*id selector selects just this element */
 #bm_related { 
   color:#ff0000
-}/*class selector */
+}
+/*class selector */
 .first_text { /*can apply to multiple elements */
   color: #2f4f4f;
 }/*relational selector*/
