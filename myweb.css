@@ -1,83 +1,81 @@
-
-header{
+header {
   text-align: center;
-  
-}
-p { /* type selector */
-  font: normal 1.125em "Helvetica", Arial, sans-serif; 
-  line-height: 2em;
-  color: #000000; 
-  margin-bottom: 20px;
-  text-align: left;
 }
 
-h1 { 
+p {
+  /* type selector */
+  font: normal 1.125em "Helvetica", Arial, sans-serif;
+  line-height: 2em;
+  color: #000000;
+  margin-bottom: 1%;
+  text-align: left;
+  padding-left: 1.65%;
+}
+
+h1 {
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.83%;
+  /* Converted from 10px */
 }
 
-h2 { 
+h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 15px;
-  padding: 10px;
+  margin-bottom: 0.83%;
+  /* Converted from 10px */
+  padding: 0.83%;
+  /* Converted from 10px */
 }
 
 h3 {
   font-weight: 300;
   text-align: center;
-  margin-bottom: 10px; /* Space below h3 */
-  padding: 10px;
-  color: #555555; /* Gray color for subheadings */
+  margin-bottom: 0.83%;
+  /* Space below h3 - converted from 10px */
+  padding: 0.83%;
+  /* Converted from 10px */
+  color: #555555;
+  /* Gray color for subheadings */
 }
 
 /* id selector selects just this element */
-#bm_related { 
+#bm_related {
   color: #ff0000;
-}
-.homepage{
-  padding: 50px 100px; /* extreme padding on all sides */
-  background: linear-gradient(54deg, rgb(29, 34, 15) 75%, #800080 80%, hsl(0, 0%, 9%) 100%);/*unappealing gradient */
-  border: 80px dotted hsl(303, 88%, 48%);/*unneccessary border*/
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 300;
-
-}
-.home{
-  padding: 40px;/*unecessary padding*/
-  border: 10px solid #800080;/*inconsistent */
-  background:linear-gradient(54deg, #140f22 75%, hsl(54, 100%, 53%) 20%, hwb(330 2% 9%) 100%);
-}
-
-
-/* class selector */
-.first_text { /* can apply to multiple elements */
-  color: #2f4f4f;
 }
 
 /* relational selector */
-section#char_pages > p {
+section#char_pages>p {
   color: #b8860b;
-  padding-left: 10px;
-}
-/*float content on character pages*/
-#char_pages{
-float:right;
-width:450px;
-padding: 15px; /* Add padding inside the container for spacing */
-}
-#char_par{
-float: left;
-width: 450px;
-margin: 20px; /* Consistent margin around the section */
-padding: 15px; /* Add padding for spacing */
+  padding-left: 0.83%;
+  /* Converted from 10px */
 }
 
+/* float content on character pages */
+#char_pages {
+  float: right;
+  width: 45%;
+  /* percent for fluid layout */
+  padding: 1.24%;
+  /* Converted from 15px */
+}
+
+#char_par {
+  float: left;
+  width: 45%;
+  /* percent for fluid layout */
+  margin: 1.24%;
+  /* Converted from 15px */
+  padding: 1.24%;
+  /* Converted from 15px */
+}
+
+/*links on home page*/
 section#char_links a {
-  color: #0000EE; /* Default link color */
+  color: #0000EE;
+  /* Default link color */
 }
 
 section#char_links a:visited {
@@ -89,17 +87,117 @@ section#char_links a:hover {
   color: #ff0000;
 }
 
-ol, ul {
-  padding-left: 20px; /* Add padding to list */
-  margin-bottom: 20px; /* Space below the list */
+ol,ul {
+  padding-left: 2.65%;
+  /* Converted from 20px */
+  margin-bottom: 1.65%;
+  /* Converted from 20px */
 }
 
-footer{
-  /*margin-top: 20px; /* Add space above footer */
-  /*text-align: center; /* Center footer content */
-  /*font-size: 0.9em; /* Smaller font size for footer */
-  margin: 100px 0; /* big margins to make it inconsistent */
-  padding: 50px 10px; /* Extreme uneven padding: large top/bottom, small left/right */
-  background-color: #ff00ff; /* Bright and distracting background */
-  color: #ffff00; /* Clashing text color */
+ol li, ul li {
+  margin-bottom: 0.83%;
+  /* Converted from 10px */
+}
+
+footer {
+  margin-top: 1.65%;
+  /* Converted from 20px */
+  text-align: center;
+  /* Center footer content */
+  font-size: 0.9em;
+  /* Smaller font size for footer */
+}
+
+/* navigation menu */
+#nav_menu {
+  padding-bottom: 2em;
+  margin: auto;
+  width: 100%;
+  /* fluid layout using percentage */
+}
+
+#nav_menu ul {
+  list-style-type: none;
+}
+
+#nav_menu ul li {
+  float: left;
+  width: 33%;
+  /* takes up 33 percent of navigation menu */
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+  /* padding above and below a elements */
+  text-decoration: none;
+  background-color: #1313e7;
+  color: hsl(191, 38%, 94%);
+  font-weight: bold;
+  border-right: 2px solid white;
+}
+
+#nav_menu ul li a.lastitem {
+  border-right: none;
+}
+
+#nav_menu ul li a:hover {
+  background-color: hsl(261, 30%, 48%);
+}
+
+main, header {
+  clear: left;
+}
+
+img {/*scalable for all img*/
+  max-width: 100%; /* Prevent the image from exceeding the width of its container */
+  padding: 1em;  
+}
+.custom-image {/*scaleable for two bigger images*/ 
+  width: 100%; /* Makes the image responsive */
+  max-width: 1024px; /* Limits the width to its native size */
+  padding: 1em; /* padding */
+}
+@media only screen and (max-width: 1014px) {
+
+  /* float content on character pages */
+  #char_pages {
+    float: none;
+    width: 45%;
+    padding: 1.24%;
+    /* Converted from 15px */
+  }
+
+  #char_par {
+    float: none;
+    width: 45%;
+    margin: 1.65%;
+    /* Converted from 20px */
+    padding: 1.24%;
+    /* Converted from 15px */
+  }
+}
+
+@media only screen and (max-width: 1016px) {
+
+  /* to fix breakpoint */
+  #nav_menu ul li {
+    float: none;
+    width: 100%;
+  }
+
+  #nav_menu ul li a {
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  #nav_menu ul li a.lastitem {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 846px) {
+  ol, ul {
+    padding-left: 20px;/*break point where orderer/unordered list gets cut off*/
+  }
 }
