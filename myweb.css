@@ -1,7 +1,9 @@
 header {
   text-align: center;
 }
-
+body{
+  background-color: #F5F5F5;
+}
 p {
   /* type selector */
   font: normal 1.125em "Helvetica", Arial, sans-serif;
@@ -40,31 +42,31 @@ h3 {
   color: #555555;
   /* Gray color for subheadings */
 }
+/*grid layout for image*/
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  grid-gap: 10px; /* Space between images */
+}
 
 /* id selector selects just this element */
 #bm_related {
   color: #ff0000;
 }
-
-/* relational selector */
-section#char_pages>p {
-  color: #b8860b;
-  padding-left: 0.83%;
-  /* Converted from 10px */
+.content{/*/flex box for character content*/
+  display:flex;
+  padding:1em;
 }
-
 /* float content on character pages */
 #char_pages {
-  float: right;
-  width: 45%;
+  flex-basis: 45%;
   /* percent for fluid layout */
   padding: 1.24%;
   /* Converted from 15px */
 }
 
 #char_par {
-  float: left;
-  width: 45%;
+  flex-basis: 45%;
   /* percent for fluid layout */
   margin: 1.24%;
   /* Converted from 15px */
@@ -89,9 +91,9 @@ section#char_links a:hover {
 
 ol,ul {
   padding-left: 2.65%;
-  /* Converted from 20px */
+  /* converted from 20px */
   margin-bottom: 1.65%;
-  /* Converted from 20px */
+  /* converted from 20px */
 }
 
 ol li, ul li {
@@ -115,14 +117,16 @@ footer {
   width: 100%;
   /* fluid layout using percentage */
 }
-
+/*flex box*/
 #nav_menu ul {
   list-style-type: none;
+  padding:0;
+  display:flex;
+  flex-direction: row;
 }
 
 #nav_menu ul li {
-  float: left;
-  width: 33%;
+  flex-basis: 33%;
   /* takes up 33 percent of navigation menu */
 }
 
@@ -153,6 +157,7 @@ main, header {
 img {/*scalable for all img*/
   max-width: 100%; /* Prevent the image from exceeding the width of its container */
   padding: 1em;  
+  
 }
 .custom-image {/*scaleable for two bigger images*/ 
   width: 100%; /* Makes the image responsive */
@@ -182,11 +187,9 @@ img {/*scalable for all img*/
 @media only screen and (max-width: 1016px) {
 
   /* to fix breakpoint */
-  #nav_menu ul li {
-    float: none;
-    width: 100%;
+  #nav_menu ul {
+    flex-direction: column;/* ul element from row to column*/
   }
-
   #nav_menu ul li a {
     border-right: none;
     border-bottom: 2px solid #ffffff;
