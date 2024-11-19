@@ -7,6 +7,8 @@
     <meta name="description" content="Explore major Batman comics, reading suggestions, and character profiles">
     <title>Batman Comics and Characters</title>
     <link rel="stylesheet" href="myweb.css">
+    <script src="https://kit.fontawesome.com/70a4a9ea9b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"><!--google font import-->
 </head>
 
 <body>
@@ -14,26 +16,41 @@
         <ul>
             <li><a href="../index.html"> Home</a></li>
             <li><a href="../characters/batman.html"> Batman</a></li>
-            <li><a href="character-img.html">Character Images</a></li>
-            <li><a href="../characterProf.html" class="lastitem"> Characters</a></li>
+            <li><a href="../characterProf.html" class="lastitem"> Characters</a><!--two tier nav menu for characters-->
+                <ul>
+                    <li><a href="characters/babs-gordon.html">Barbara Gordon</a></li>
+                    <li><a href="characters/cassandra.html">Cassandra Cain</a></li>
+                    <li><a href="characters/the-cat.html">Catwoman</a></li>
+                    <li><a href="characters/damian.html">Damian Wayne</a></li>
+                    <li><a href="characters/dick-grayson.html">Dick Grayson</a></li>
+                    <li><a href="characters/jason-todd.html">Jason Todd</a></li>
+                    <li><a href="characters/steph.html">Stephanie Brown</a></li>
+                    <li><a href="characters/tim-drake.html">Tim Drake</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <header>
         <!--homepage that includes description of website/intro-->
-        <h1>Homepage</h1>
+        <h1>Batman Comics to Read</h1>
         <img src="images/batman_timSale.JPG" alt="Drawing of Batman standing." class="custom-image">
         <p>&copy; DC Comics. Image of Batman drawn by Tim Sale. Used for educational purposes. Batman and all related characters and stories are property of DC Comics</p>
-        <p>This website has information regarding <em>Batman</em> characters and comics to check out!</p>
     </header>
     <main>
-        <section id="char_links"><!--section for batman related character webpages-->
-            <p>Below is a link that lists some Batman comics to read</p>
-            <p>It is not a definitive list, but rather jsut reccomended readings for new comic readers!</p>
-            <p>The reading lists are in chronilogical order.</p>
-            <p>The Caped <a href="characters/batman.html">Crusader!</a></p>
-            <h2 id="bm_related">Batman Related characters:</h2><!--unique id tag with no spaces-->
-            <p>Significant family, friends, and allies of the Batman. You can purchase comics <a href="https://www.amazon.com/kindle-dbs/cu/signup?ref=abpmcmx_23_2_us_psr_gs_r_mn_x_30dft_cu_5caTDxTd22_cu2&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YZJkbrTlYO12KLgkmbdioAhJnSTmWEEeKXb1KY1uYzGW0drhv035voaAsw_EALw_wcB" target="_blank">here</a></p>
-        </section>
+        <p>This website has information regarding <em>Batman</em> characters and comics to check out!</p>
+        <ul>
+            <li>It is not a definitive list, but rather just recommended readings for new comic readers!</li>
+            <li>The reading lists are in chronological order.</li>
+            <li>Below are websites to purchase comics.</li>
+            <li>
+                <i class="fas fa-globe fa-lg" style="margin-right: 5px;"></i>
+                <a href="https://www.amazon.com/kindle-dbs/cu/signup?ref=abpmcmx_23_2_us_psr_gs_r_mn_x_30dft_cu_5caTDxTd22_cu2&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YZJkbrTlYO12KLgkmbdioAhJnSTmWEEeKXb1KY1uYzGW0drhv035voaAsw_EALw_wcB" target="_blank">Amazon</a>
+            </li>
+            <li>
+                <i class="fas fa-globe fa-lg" style="margin-right: 5px;"></i>
+                <a href="https://www.instocktrades.com/" target="_blank">InStockTrades</a>
+            </li>
+        </ul>
     </main>
     <p><a href="#top"> Return to top</a></p><!--placeholder link to top of page-->
     <footer>&copy; 2024 Deja Lathan.</footer>

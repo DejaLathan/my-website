@@ -1,0 +1,11 @@
+Advice:
+
+I think it would be better if you added a drop down menu under the characters tab for each character so that users won't have to go back to the main characters page every time they want to check out other characters.
+-Added a two tier navigation list to my website.
+
+The size of the pictures for each character should be consistent so users won't have to scroll down that much to find the content they're looking for, i.e. don't make it too big. (I think the picture size for Tim Drake is good)
+
+Improvements, Changing the font on the navigation menu to something like Arial. I feel like the navigation menu is more dominant than the picture and the "Homepage" title as soon as I open the project. it might just be me. It is still very cool though as the font is "BATMAN" like with those curves on the edge of the letters, :)
+-Changed Homepage h1 element font to imported Google Font.
+
+Another one is make the images on the right not touch the edge of the screen by adding some margins. make it even with the margin on the left image. It will make the spacing balanced.

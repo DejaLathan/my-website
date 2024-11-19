@@ -1,62 +1,43 @@
+* {/*universal tag for font type to avoid repition*/
+  font-family: "Arial", Helvetica, sans-serif;
+}
 header {
   text-align: center;
 }
 body{
-  background-color: #F5F5F5;
+  background-color: #d3cfcfbc;
 }
 p {
   /* type selector */
   font: normal 1.125em "Helvetica", Arial, sans-serif;
   line-height: 2em;
   color: #000000;
-  margin-bottom: 1%;
+  margin-top: 0.5%;
   text-align: left;
   padding-left: 1.65%;
 }
-
+/* Group header styles */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 0.83%;/* Converted from 10px */
+}
 h1 {
-  font-family: "Arial", Helvetica, sans-serif;
   font-weight: 500;
-  text-align: center;
-  margin-bottom: 0.83%;
-  /* Converted from 10px */
+  font-family: "DM Serif Display", serif;
 }
-
 h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 0.83%;
-  /* Converted from 10px */
   padding: 0.83%;
   /* Converted from 10px */
 }
-
 h3 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 0.83%;
-  /* Space below h3 - converted from 10px */
   padding: 0.83%;
   /* Converted from 10px */
-  color: #555555;
-  /* Gray color for subheadings */
 }
-/*grid layout for image*/
-.gallery{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr); /* Two images per row */
-  grid-gap: 10px; /* Space between images */
-}
-
-/* id selector selects just this element */
-#bm_related {
-  color: #ff0000;
-}
-.content{/*/flex box for character content*/
+.content{/*flex box for character content*/
   display:flex;
   padding:1em;
 }
+
 /* float content on character pages */
 #char_pages {
   flex-basis: 45%;
@@ -64,7 +45,6 @@ h3 {
   padding: 1.24%;
   /* Converted from 15px */
 }
-
 #char_par {
   flex-basis: 45%;
   /* percent for fluid layout */
@@ -73,34 +53,17 @@ h3 {
   padding: 1.24%;
   /* Converted from 15px */
 }
-
-/*links on home page*/
-section#char_links a {
-  color: #0000EE;
-  /* Default link color */
-}
-
-section#char_links a:visited {
-  color: #006400;
-}
-
-section#char_links a:hover {
-  font-size: 200%;
-  color: #ff0000;
-}
-
+/*padding and margins for lists*/
 ol,ul {
   padding-left: 2.65%;
   /* converted from 20px */
   margin-bottom: 1.65%;
   /* converted from 20px */
 }
-
 ol li, ul li {
   margin-bottom: 0.83%;
   /* Converted from 10px */
 }
-
 footer {
   margin-top: 1.65%;
   /* Converted from 20px */
@@ -109,63 +72,79 @@ footer {
   font-size: 0.9em;
   /* Smaller font size for footer */
 }
-
 /* navigation menu */
 #nav_menu {
-  padding-bottom: 2em;
+  padding: 0;
   margin: auto;
   width: 100%;
   /* fluid layout using percentage */
 }
-/*flex box*/
+/*flex box for navi*/
 #nav_menu ul {
   list-style-type: none;
   padding:0;
   display:flex;
   flex-direction: row;
 }
-
+/*nav items*/
 #nav_menu ul li {
   flex-basis: 33%;
+  position:relative;
   /* takes up 33 percent of navigation menu */
 }
-
+/*top level menu items*/
 #nav_menu ul li a {
   text-align: center;
   display: block;
   padding: 1em 0;
   /* padding above and below a elements */
   text-decoration: none;
-  background-color: #1313e7;
+  background-color:#002034;
   color: hsl(191, 38%, 94%);
   font-weight: bold;
-  border-right: 2px solid white;
+  border-right: 2px solid #ffffff;
 }
-
 #nav_menu ul li a.lastitem {
   border-right: none;
 }
-
+/*hover effect for top level items*/
 #nav_menu ul li a:hover {
-  background-color: hsl(261, 30%, 48%);
+  background-color:#6c7558;
 }
-
+/*submenu items*/
+#nav_menu ul ul li{
+  width:100%;
+}
+#nav_menu ul ul{
+  display:none;/*hide default*/
+  position: absolute;
+  width:100%;
+}
+#nav_menu ul ul li a{
+  padding: 0.5em;
+  text-align: left;
+  border-right:none;
+  border-bottom: 1px solid #ffffff;
+}
+/*show submenu while hover*/
+#nav_menu ul li:hover>ul{
+  display:block;
+}
 main, header {
   clear: left;
 }
-
 img {/*scalable for all img*/
   max-width: 100%; /* Prevent the image from exceeding the width of its container */
   padding: 1em;  
-  
 }
 .custom-image {/*scaleable for two bigger images*/ 
   width: 100%; /* Makes the image responsive */
   max-width: 1024px; /* Limits the width to its native size */
   padding: 1em; /* padding */
 }
-@media only screen and (max-width: 1014px) {
 
+/*media queries for various breakpoints*/
+@media only screen and (max-width: 1014px) {
   /* float content on character pages */
   #char_pages {
     float: none;
@@ -173,7 +152,6 @@ img {/*scalable for all img*/
     padding: 1.24%;
     /* Converted from 15px */
   }
-
   #char_par {
     float: none;
     width: 45%;
@@ -183,9 +161,7 @@ img {/*scalable for all img*/
     /* Converted from 15px */
   }
 }
-
 @media only screen and (max-width: 1016px) {
-
   /* to fix breakpoint */
   #nav_menu ul {
     flex-direction: column;/* ul element from row to column*/
@@ -194,13 +170,12 @@ img {/*scalable for all img*/
     border-right: none;
     border-bottom: 2px solid #ffffff;
   }
-
   #nav_menu ul li a.lastitem {
     border-right: none;
   }
 }
 @media only screen and (max-width: 846px) {
   ol, ul {
-    padding-left: 20px;/*break point where orderer/unordered list gets cut off*/
+    padding-left: 20px;/*break point where order/unordered list gets cut off*/
   }
 }
