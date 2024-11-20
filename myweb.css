@@ -23,7 +23,7 @@ h1, h2, h3 {
 }
 h1 {
   font-weight: 500;
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif Display", serif;/*Google font*/
 }
 h2 {
   padding: 0.83%;
@@ -37,7 +37,6 @@ h3 {
   display:flex;
   padding:1em;
 }
-
 /* float content on character pages */
 #char_pages {
   flex-basis: 45%;
@@ -142,7 +141,6 @@ img {/*scalable for all img*/
   max-width: 1024px; /* Limits the width to its native size */
   padding: 1em; /* padding */
 }
-
 /*media queries for various breakpoints*/
 @media only screen and (max-width: 1014px) {
   /* float content on character pages */
