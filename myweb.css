@@ -133,7 +133,7 @@ main, header {
   clear: left;
 }
 img {/*scalable for all img*/
-  max-width: 100%; /* Prevent the image from exceeding the width of its container */
+  max-width: 80%; /* Prevent the image from exceeding the width of its container */
   padding: 1em;  
 }
 .custom-image {/*scaleable for two bigger images*/ 
