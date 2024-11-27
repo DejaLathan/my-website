@@ -1,17 +1,17 @@
 * {/*universal tag for font type to avoid repition*/
   font-family: "Arial", Helvetica, sans-serif;
+  color: hsl(0, 0%, 100%);
 }
 header {
   text-align: center;
 }
 body{
-  background-color: #d3cfcfbc;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #4a4a4a, #848484, #d3d3d3);
 }
 p {
   /* type selector */
   font: normal 1.125em "Helvetica", Arial, sans-serif;
   line-height: 2em;
-  color: #000000;
   margin-top: 0.5%;
   text-align: left;
   padding-left: 1.65%;
@@ -98,8 +98,8 @@ footer {
   padding: 1em 0;
   /* padding above and below a elements */
   text-decoration: none;
-  background-color:#002034;
-  color: hsl(191, 38%, 94%);
+  background-color: #1a1a1a;
+  color: #e0e0e0; 
   font-weight: bold;
   border-right: 2px solid #ffffff;
 }
@@ -108,7 +108,7 @@ footer {
 }
 /*hover effect for top level items*/
 #nav_menu ul li a:hover {
-  background-color:#6c7558;
+  background-color: #5a4f27; 
 }
 /*submenu items*/
 #nav_menu ul ul li{
