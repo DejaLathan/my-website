@@ -1,12 +1,12 @@
 * {/*universal tag for font type to avoid repition*/
   font-family: "Arial", Helvetica, sans-serif;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
 }
 header {
   text-align: center;
 }
 body{
-  background: linear-gradient(135deg, #000000, #1a1a1a, #4a4a4a, #848484, #d3d3d3);
+  background: linear-gradient(135deg, #4a4a4a, #848484, #d3d3d3);
 }
 p {
   /* type selector */
@@ -23,7 +23,6 @@ h1, h2, h3 {
 }
 h1 {
   font-weight: 500;
-  font-family: "DM Serif Display", serif;/*Google font*/
 }
 h2 {
   padding: 0.83%;
@@ -103,9 +102,9 @@ footer {
   font-weight: bold;
   border-right: 2px solid #ffffff;
 }
-#nav_menu ul li a.lastitem {
+#nav_menu ul li:last-child a {
   border-right: none;
-}
+}/*remove right border of final item*/
 /*hover effect for top level items*/
 #nav_menu ul li a:hover {
   background-color: #5a4f27; 
@@ -123,7 +122,7 @@ footer {
   padding: 0.5em;
   text-align: left;
   border-right:none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;/*bottom border on lower list items for separation*/
 }
 /*show submenu while hover*/
 #nav_menu ul li:hover>ul{
@@ -136,7 +135,6 @@ img {/*scalable for all img*/
   max-width: 80%; /* Prevent the image from exceeding the width of its container */
   padding: 1em;  
 }
-
 /*media queries for various breakpoints*/
 @media only screen and (max-width: 1014px) {
   /* float content on character pages */
