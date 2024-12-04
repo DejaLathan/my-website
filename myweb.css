@@ -69,6 +69,7 @@ footer {
   /* Center footer content */
   font-size: 0.9em;
   /* Smaller font size for footer */
+  font-style: italic;
 }
 /* navigation menu */
 #nav_menu {
