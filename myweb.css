@@ -6,13 +6,12 @@ header {
   text-align: center;
 }
 body{
-  background: linear-gradient(135deg, #4a4a4a, #848484, #d3d3d3);
+  background: linear-gradient(135deg, #414141,#5f5f5f, #908f8f, #e5e5e5);
 }
 p {
   /* type selector */
-  font: normal 1.125em "Helvetica", Arial, sans-serif;
-  line-height: 2em;
-  margin-top: 0.5%;
+  line-height: 1.5em;
+  margin-top: 0.4%;
   text-align: left;
   padding-left: 1.65%;
 }
@@ -20,17 +19,18 @@ p {
 h1, h2, h3 {
   text-align: center;
   margin-bottom: 0.83%;/* Converted from 10px */
-}
-h1 {
-  font-weight: 500;
-}
-h2 {
   padding: 0.83%;
-  /* Converted from 10px */
 }
-h3 {
-  padding: 0.83%;
-  /* Converted from 10px */
+figcaption{
+  display: block;/*change inline element to block element*/
+  font-style: italic;
+  padding-bottom: .25em;
+}
+a:visited{/*hover and visited colors to help with navigation */
+  color:rgb(186, 0, 186);
+}
+a:hover{
+  color:#ff0000;
 }
 .content{/*flex box for character content*/
   display:flex;
@@ -105,6 +105,7 @@ footer {
 #nav_menu ul li:last-child a {
   border-right: none;
 }/*remove right border of final item*/
+
 /*hover effect for top level items*/
 #nav_menu ul li a:hover {
   background-color: #5a4f27; 
@@ -168,6 +169,6 @@ img {/*scalable for all img*/
 }
 @media only screen and (max-width: 846px) {
   ol, ul {
-    padding-left: 20px;/*break point where order/unordered list gets cut off*/
+    padding-left: 1.5em;/*break point where order/unordered list gets cut off*/
   }
 }
