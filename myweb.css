@@ -134,7 +134,7 @@ main, header {
   clear: left;
 }
 img {/*scalable for all img*/
-  max-width: 80%; /* Prevent the image from exceeding the width of its container */
+  max-width: 100%; 
   padding: 1em;  
 }
 /*media queries for various breakpoints*/
